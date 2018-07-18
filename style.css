@@ -1,0 +1,131 @@
+/*
+Theme Name:     our-chatham
+Theme URI:      ourchatham.com
+Description:    Responsive theme for Our Chatham project
+Author:         Brian Shurney
+Author URI:     brianshurney.com
+Template:       largo
+Version:        0.1.0
+*/
+
+/*Coming soon styles*/
+.form-search{
+  display: none;
+}
+.global-nav-bg{
+  display: none;
+}
+.row {
+  display: none !important;
+}
+#cs-logo{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+#main-nav{
+  display: none;
+}
+#content{
+  display: none;
+}
+.sticky-nav-display{
+  display: none !important;
+}
+.sticky-nav-container{
+  display: none !important;
+}
+.slide-buttons-wrapper{
+  margin: 0 12%;
+}
+.slide-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#coming-soon{
+  margin: 0;
+}
+.button{
+  background-color: #FC9E00 !important;
+  height: 60px !important;
+  color: #000 !important;
+  font-family: sans-serif !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+h1{
+  font-size: 2em;
+}
+.clear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Global Styles*/
+.row {
+  display: flex;
+  align-items: center;
+}
+#page{
+  padding: 0;
+  margin: 0 auto !important;
+}
+#mc_embed_signup {
+  margin: 0 20%;
+}
+
+/*Header Styles*/
+.c-header{
+  padding: 2.5% 12.5%;
+}
+#site-header{
+  display: none;
+}
+.column1 {
+  flex: 1;
+}
+.column2 {
+  flex: 1 auto;
+}
+.question-box{
+  margin-right: 10%;
+  float: right;
+  width: 450px;
+  height: 100px;
+  border: 3px solid #FF8D1B;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+.slide-buttons{
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+#logo-large{
+
+}
+
+/*Nav Styles*/
+
+/*Global Nav*/
+.global-nav ul a{
+  color: #000;
+  font-size: 1.5em;
+}
+.global-nav{
+  padding: 0 12.5%;
+}
+.global-nav-bg{
+  background-color: #E8E8E8;
+}
+
+/*Footer Styles*/
+#footer-social{
+  display: none;
+}
+#boilerplate{
+  display: none;
+}
