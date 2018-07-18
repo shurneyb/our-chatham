@@ -46,14 +46,6 @@ Version:        0.1.0
 #coming-soon{
   margin: 0;
 }
-.button{
-  background-color: #FC9E00 !important;
-  height: 60px !important;
-  color: #000 !important;
-  font-family: sans-serif !important;
-  font-size: 30px !important;
-  font-weight: bold !important;
-}
 h1{
   font-size: 2em;
 }
@@ -104,9 +96,6 @@ h1{
   border-top: 2px solid;
   border-bottom: 2px solid;
 }
-#logo-large{
-
-}
 
 /*Nav Styles*/
 
@@ -120,6 +109,32 @@ h1{
 }
 .global-nav-bg{
   background-color: #E8E8E8;
+}
+
+/*Signup form*/
+#mc_embed_signup_scroll{
+  background-color: #1BC9FF;
+  padding: 15px;
+  border-radius: 10px;
+  border: solid #000 5px;
+}
+
+.button{
+  background-color: rgb(255, 179, 0) !important;
+  height: 60px !important;
+  color: #2e2e2e !important;
+  font-family: sans-serif !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
+  border: solid #2e2e2e 2px !important;
+  transition: 200ms ease-out !important;
+}
+
+.button:hover{
+  font-size: 21px !important;
+  background-color:  rgb(255, 179, 46) !important;
+  transition: 200ms ease-out !important;
 }
 
 /*Footer Styles*/
