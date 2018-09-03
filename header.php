@@ -78,11 +78,6 @@
 
 		}
 	?>
-		
-	<div class="header-grid">
-		<div class="logo"><img src="http://ourchatham.local/wp-content/uploads/2018/07/logo-final-2.png"></div>
-		<div class="q-box"></div>
-	</div>
 
 	<?php
 

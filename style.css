@@ -61,7 +61,7 @@ h1{
   .header-grid{
       display:grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 150px;
+      grid-template-rows: 200px;
       grid-template-areas: 
           'logo q q q';
       grid-gap: 10px;
@@ -89,6 +89,15 @@ h1{
 #mc_embed_signup {
   margin: 0 20%;
 }
+.margins{
+  margin: 0 12%;
+}
+.v-h-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*Header Styles*/
 .c-header{
@@ -117,6 +126,9 @@ h1{
   height: 80px;
   border-top: 2px solid;
   border-bottom: 2px solid;
+}
+#question-box{
+  width:100%;
 }
 
 /*Nav Styles*/

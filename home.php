@@ -8,6 +8,7 @@
 
 get_header();
 
+
 /*
  * Collect post IDs in each loop so we can avoid duplicating posts
  * and get the theme option to determine if this is a two column or three column layout
@@ -23,7 +24,12 @@ else
 	$span_class = ( $largo['home_rail'] ) ? 'span8' : 'span12' ;
 ?>
 
+<!--<script async src="https://modules.wearehearken.com/wndr/embed/868.js"></script>-->
 
+<div class="header-grid margins">
+	<div class="logo v-h-center"><img src="http://ourchatham.local/wp-content/uploads/2018/07/logo-final-2.png"></div>
+	<div class="q-box v-h-center"><input id="question-box" type="text" name="name" id="name" /></div>
+</div>
 
 <div id="content" class="stories <?php echo $span_class; ?> <?php echo sanitize_html_class(basename($home_template)); ?>" role="main">
 <?php
