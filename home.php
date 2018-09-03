@@ -27,8 +27,13 @@ else
 <!--<script async src="https://modules.wearehearken.com/wndr/embed/868.js"></script>-->
 
 <div class="header-grid margins">
-	<div class="logo v-h-center"><img src="http://ourchatham.local/wp-content/uploads/2018/07/logo-final-2.png"></div>
-	<div class="q-box v-h-center"><input id="question-box" type="text" name="name" id="name" /></div>
+	<div class="logo v-h-center">
+		<img src="http://ourchatham.local/wp-content/uploads/2018/07/logo-final-2.png">
+	</div>
+	<div class="q-box v-h-center">
+		<textarea id="question-box" type="text" name="question-box" placeholder="What questions do you have about Chatham County that you want Our Chatham to investigate?"></textarea>
+		<button id="ask-button">Ask</button>
+	</div>
 </div>
 
 <div id="content" class="stories <?php echo $span_class; ?> <?php echo sanitize_html_class(basename($home_template)); ?>" role="main">
