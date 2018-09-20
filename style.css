@@ -8,7 +8,7 @@ Template:       largo
 Version:        0.1.0
 */
 
-/*Coming soon styles
+/* coming soon
 .form-search{
   display: none;
 }
@@ -54,9 +54,9 @@ h1{
   align-items: center;
   justify-content: center;
 }
-*/
+ end coming soon */
 
-/*Grid Styles*/
+/* grid */
 @supports (grid-area:auto){
   .header-grid{
       display:grid;
@@ -66,18 +66,16 @@ h1{
           'logo q q q';
       grid-gap: 10px;
   }
-
   .logo{
       grid-area: logo;
-      background: rgb(101, 140, 177)
   }
   .q-box{
       grid-area: q;
-      background: rgb(220, 255, 155)
   }
 }
+/* end grid */
 
-/*Global Styles*/
+/* global */
 .row {
   display: flex;
   align-items: center;
@@ -90,27 +88,52 @@ h1{
   margin: 0 20%;
 }
 .margins{
-  margin: 0 12%;
+  margin: 0 6%;
 }
 .v-h-center{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+body{
+  position: relative;
+}
+#overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  z-index: 2000;
+  display: none;
+}
+#sticky-nav{
+  display: none;
+}
+.span8{
+  width: 50%;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.row-fluid .span8{
+  width: 63% !important;
+}
+textarea{
+  color: #000;
+}
+/* end global */
 
 
-/*Header Styles*/
+/* homepage styles */
 .c-header{
   padding: 2.5% 12.5%;
 }
 #site-header{
   display: none;
-}
-.column1 {
-  flex: 1;
-}
-.column2 {
-  flex: 1 auto;
 }
 .slide-buttons{
   width: 100%;
@@ -118,41 +141,198 @@ h1{
   border-top: 2px solid;
   border-bottom: 2px solid;
 }
-#question-box{
-  width:100%;
-  height: 100px;
-  padding:4px 8px;
-  border: 3px solid #FF8D1B;
-  border-radius: 20px;
-}
-#ask-button{
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
 
-/*Nav Styles*/
+  /* question box */
+  #q-box-area{
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: 90px;
+    bottom: 12px;
+  }
+  #question-box{
+    width: 100%;
+    height: 100%;
+    padding: 4px 8px;
+    border: 3px solid #FF8D1B;
+    border-radius: 20px;
+  }
+  #question-box:placeholder{
+    
+  }
+  #ask-button{
+    position: absolute;
+    bottom: 2px;
+    right: -5px;
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid #000 2px;
+    transition: background-color 200ms ease-out;
+  }
+  #ask-button:hover{
+    background-color: #0088B2;
+    color: #fff;
+    transition: background-color 200ms ease-out;
+  }
+  /* end question box*/
 
-/*Global Nav*/
+  /* hearken */
+  #hearken-wrapper{
+    display: none;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1%;
+  }
+  #hearken-bg{
+    display: none;
+    position: absolute;
+    height:100%;
+    width:100%;
+    bottom: 0;
+    right: 0;
+    z-index: 5000;
+  }
+  #hearken-form{
+    display: none;
+  }
+  #mc-form{
+    display: none;
+  }
+  #close{
+    position: absolute;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: underline;
+    top: 0;
+    right: 21%;
+    z-index: 5000;
+    cursor: pointer;
+  }
+  /* end hearken */
+
+  /* mailchimp */
+    #mc_embed_signup{
+      margin: 0;
+    }
+    #mc_embed_signup form{
+      padding: 0 !important;
+    }
+    .clear{
+      display: flex;
+      justify-content: center;
+    }
+
+  /* subscribe box */
+  #subscribe-box{
+    height: 120px;
+    width: 300px;
+    border: 1px solid;
+  }
+  #subscribe-box h2{
+    margin: 0;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  #submission-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 35px;
+  }
+  #subscribe-box input{
+    width: 175px;
+    margin: 3px;
+  }
+  #subscribe-button{
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid #000 2px;
+    transition: background-color 200ms ease-out;
+  }
+  #subscribe-button:hover{
+    background-color: #0088B2;
+    color: #fff;
+    transition: background-color 200ms ease-out;
+  }
+  /* end subscribe box */
+/* end homepage*/
+
+/* main nav */
+#main-nav.navbar {
+  border: 0;
+  border-top: 3px solid #0088b2;
+  width: 97%;
+  margin: auto;
+}
+.navbar .container .nav-shelf .nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.navbar .container .nav-shelf .nav li{
+  min-width: 200px;
+  text-align: center;
+  margin: 0px 20px;
+}
+.navbar li > a{
+  font-weight: bold;
+  background: #1bcaff2d;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: 180ms ease-in-out;
+}
+.navbar li > a:hover {
+  background: #0088b2;
+  color: #fff;
+  transition: 180ms ease-in-out;
+}
+/* end nav */
+
+/* global nav */
 .global-nav ul a{
-  color: #000;
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 1.2em;
 }
 .global-nav{
   padding: 0 12.5%;
 }
 .global-nav-bg{
-  background-color: #E8E8E8;
+  background-color: #23282d;
 }
+#header-search button{
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ccc;
+  transition: background-color 200ms ease-out;
+  line-height: 0;
+  font-weight: bold;
+}
+#header-search button:hover{
+  background-color: #0088B2;
+  color: #fff;
+  transition: background-color 200ms ease-out;
+}
+/* end global nav */
 
-/*Signup form*/
+/* signup form */
 #mc_embed_signup_scroll{
   background-color: rgb(172, 236, 255);
   padding: 15px;
-  border-radius: 10px;
   border: solid #000 5px;
 }
-
 .button{
   background-color: rgb(255, 255, 255) !important;
   height: 60px !important;
@@ -164,16 +344,18 @@ h1{
   border: solid #2e2e2e 2px !important;
   transition: 200ms ease-out !important;
 }
-
 .button:hover{
   background-color:  rgb(255, 141, 27) !important;
   transition: 200ms ease-out !important;
 }
+/* end signup form */
 
-/*Footer Styles*/
+
+/* footer styles */
 #footer-social{
   display: none;
 }
 #boilerplate{
   display: none;
 }
+/* end footer styles */

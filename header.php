@@ -46,6 +46,8 @@
 
 <body <?php body_class(); ?>>
 
+	<div id="top"></div>
+
 	<?php
 
 	/**
@@ -78,53 +80,73 @@
 
 		}
 	?>
+	
+	<div id="page" class="hfeed clearfix">
 
-	<?php
+  <div class="header-grid margins">
+    <div class="logo v-h-center">
+      <a href="https://www.ourchatham.local"><img src="https://ourchatham.local/wp-content/uploads/2018/07/logo-final-2.png"></a>
+    </div>
+    <div class="q-box v-h-center">
+      <div id="q-box-area">
+        <textarea id="question-box" type="text" name="question-box" placeholder="What questions do you have about Chatham County that you want Our Chatham to investigate?"></textarea>
+        <button id="ask-button">Ask</button>
+      </div>
+    </div>
+  </div>
 
-		get_template_part( 'partials/nav', 'sticky' );
+		<?php
 
-		if ( of_get_option( 'leaderboard_enabled' ) == TRUE ) {
-			get_template_part( 'partials/header-ad-zone' );
-		}
+			get_template_part( 'partials/nav', 'sticky' );
+
+			if ( of_get_option( 'leaderboard_enabled' ) == TRUE ) {
+				get_template_part( 'partials/header-ad-zone' );
+			}
+
+			/**
+			 * Fires before the Largo header content.
+			 *
+			 * @since 0.4
+			 */
+      do_action( 'largo_before_header' );
+      
+
+			get_template_part( 'partials/largo-header' );
+
+			/**
+			 * Fires after the Largo header content.
+			 *
+			 * @since 0.4
+			 */
+      do_action( 'largo_after_header' );
+      
+
+			get_template_part( 'partials/nav', 'main' );
+
+			if ( SHOW_SECONDARY_NAV === TRUE ) {
+				get_template_part( 'partials/nav', 'secondary' );
+			}
+
+			get_template_part('partials/homepage-alert');
+
+			/**
+			 * Fires after the Largo navigation content.
+			 *
+			 * @since 0.4
+			*/
+			do_action( 'largo_after_nav' );
+
+		?>
+
+		<div id="main" class="row-fluid clearfix">
+
+      
+
+		<?php
 
 		/**
-		 * Fires before the Largo header content.
+		 * Fires at the top of the Largo id=main DIV element.
 		 *
 		 * @since 0.4
 		 */
-		do_action( 'largo_before_header' );
-
-		get_template_part( 'partials/largo-header' );
-
-		/**
-		 * Fires after the Largo header content.
-		 *
-		 * @since 0.4
-		 */
-		do_action( 'largo_after_header' );
-
-		get_template_part( 'partials/nav', 'main' );
-
-		if ( SHOW_SECONDARY_NAV === TRUE ) {
-			get_template_part( 'partials/nav', 'secondary' );
-		}
-
-		get_template_part('partials/homepage-alert');
-
-		/**
-		 * Fires after the Largo navigation content.
-		 *
-		 * @since 0.4
-		*/
-		do_action( 'largo_after_nav' );
-
-	?>
-
-	<?php
-
-	/**
-	 * Fires at the top of the Largo id=main DIV element.
-	 *
-	 * @since 0.4
-	 */
-	do_action( 'largo_main_top' );
+		do_action( 'largo_main_top' );
