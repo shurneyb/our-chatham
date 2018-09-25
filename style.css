@@ -54,23 +54,23 @@ h1{
   align-items: center;
   justify-content: center;
 }
- end coming soon */
+end coming soon */
 
 /* grid */
 @supports (grid-area:auto){
   .header-grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 200px;
-      grid-template-areas: 
-          'logo q q q';
-      grid-gap: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    'logo q q q';
+    grid-gap: 10px;
   }
   .logo{
-      grid-area: logo;
+    grid-area: logo;
   }
   .q-box{
-      grid-area: q;
+    grid-area: q;
   }
 }
 /* end grid */
@@ -142,134 +142,142 @@ textarea{
   border-bottom: 2px solid;
 }
 
-  /* question box */
-  #q-box-area{
-    display: inline-block;
-    position: relative;
-    width: 95%;
-    height: 90px;
-    bottom: 12px;
-  }
-  #question-box{
-    width: 100%;
-    height: 100%;
-    padding: 4px 8px;
-    border: 3px solid #FF8D1B;
-    border-radius: 20px;
-  }
-  #question-box:placeholder{
-    
-  }
-  #ask-button{
-    position: absolute;
-    bottom: 2px;
-    right: -5px;
-    height: 30px;
-    width: 50px;
-    background-color: #fff;
-    color: #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 5px;
-    border: solid #000 2px;
-    transition: background-color 200ms ease-out;
-  }
-  #ask-button:hover{
-    background-color: #0088B2;
-    color: #fff;
-    transition: background-color 200ms ease-out;
-  }
-  /* end question box*/
+/* question box */
+#q-box-area{
+  display: inline-block;
+  position: relative;
+  width: 95%;
+  height: 90px;
+  bottom: 12px;
+}
+#question-box{
+  width: 100%;
+  height: 100%;
+  padding: 4px 8px;
+  border: 3px solid #FF8D1B;
+  border-radius: 20px;
+}
+#question-box:placeholder{
+  
+}
+#ask-button{
+  position: absolute;
+  bottom: 2px;
+  right: -5px;
+  height: 30px;
+  width: 50px;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid #000 2px;
+  transition: background-color 200ms ease-out;
+}
+#ask-button:hover{
+  background-color: #0088B2;
+  color: #fff;
+  transition: background-color 200ms ease-out;
+}
+/* end question box*/
 
-  /* hearken */
-  #hearken-wrapper{
-    display: none;
-    position: absolute;
-    width: 50%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 1%;
-  }
-  #hearken-bg{
-    display: none;
-    position: absolute;
-    height:100%;
-    width:100%;
-    bottom: 0;
-    right: 0;
-    z-index: 5000;
-  }
-  #hearken-form{
-    display: none;
-  }
-  #mc-form{
-    display: none;
-  }
-  #close{
-    position: absolute;
-    font-size: 1.2em;
-    color: #fff;
-    text-decoration: underline;
-    top: 0;
-    right: 21%;
-    z-index: 5000;
-    cursor: pointer;
-  }
-  /* end hearken */
+/* hearken */
+#hearken-wrapper{
+  display: none;
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1%;
+}
+#hearken-bg{
+  display: none;
+  position: absolute;
+  height:100%;
+  width:100%;
+  bottom: 0;
+  right: 0;
+  z-index: 5000;
+}
+#hearken-form{
+  display: none;
+}
+#mc-form{
+  display: none;
+}
+#close{
+  position: absolute;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: underline;
+  top: 0;
+  right: 21%;
+  z-index: 5000;
+  cursor: pointer;
+}
+/* end hearken */
 
-  /* mailchimp */
-    #mc_embed_signup{
-      margin: 0;
-    }
-    #mc_embed_signup form{
-      padding: 0 !important;
-    }
-    .clear{
-      display: flex;
-      justify-content: center;
-    }
+/* mailchimp */
+#mc_embed_signup{
+  margin: 0;
+}
+#mc_embed_signup form{
+  padding: 0 !important;
+}
+.clear{
+  display: flex;
+  justify-content: center;
+}
 
-  /* subscribe box */
-  #subscribe-box{
-    height: 120px;
-    width: 300px;
-    border: 1px solid;
-  }
-  #subscribe-box h2{
-    margin: 0;
-    font-size: 1.4em;
-    text-align: center;
-  }
-  #submission-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    height: 35px;
-  }
-  #subscribe-box input{
-    width: 175px;
-    margin: 3px;
-  }
-  #subscribe-button{
-    background-color: #fff;
-    color: #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 5px;
-    border: solid #000 2px;
-    transition: background-color 200ms ease-out;
-  }
-  #subscribe-button:hover{
-    background-color: #0088B2;
-    color: #fff;
-    transition: background-color 200ms ease-out;
-  }
-  /* end subscribe box */
+/* subscribe box */
+#subscribe-box{
+  height: 120px;
+  width: 300px;
+  border: 1px solid;
+}
+#subscribe-box h2{
+  margin: 0;
+  font-size: 1.4em;
+  text-align: center;
+}
+#submission-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 35px;
+}
+#subscribe-box input{
+  width: 175px;
+  margin: 3px;
+}
+#subscribe-button{
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid #000 2px;
+  transition: background-color 200ms ease-out;
+}
+#subscribe-button:hover{
+  background-color: #0088B2;
+  color: #fff;
+  transition: background-color 200ms ease-out;
+}
+/* end subscribe box */
 /* end homepage*/
 
 /* main nav */
+#main-nav{
+  position: sticky;
+  top: -4px;
+  z-index: 2;
+}
+.navbar-inner{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
 #main-nav.navbar {
   border: 0;
   border-top: 3px solid #0088b2;
@@ -289,7 +297,7 @@ textarea{
 }
 .navbar li > a{
   font-weight: bold;
-  background: #1bcaff2d;
+  background: #c4f1ff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: 180ms ease-in-out;
@@ -312,7 +320,7 @@ textarea{
 .global-nav-bg{
   background-color: #23282d;
 }
-#header-search button{
+.form-search button{
   background-color: #fff;
   color: #000;
   border: 2px solid #ccc;
@@ -320,10 +328,13 @@ textarea{
   line-height: 0;
   font-weight: bold;
 }
-#header-search button:hover{
+.form-search button:hover{
   background-color: #0088B2;
   color: #fff;
   transition: background-color 200ms ease-out;
+}
+.search-submit{
+  height: 34px;
 }
 /* end global nav */
 
