@@ -1,10 +1,11 @@
 console.log("custom scripts are loaded");
 
-var ask = document.getElementById('ask-button');
+var ask = document.getElementsByClassName('ask-button');
 var hearken = document.getElementById('hearken-wrapper');
 
 jQuery(document).ready(function($) {
-  $("#ask-button").click(function() {
+  $(ask).click(function() {
+    console.log("clcik");
     if (document.getElementById('question-box').value != null){
       var userQuestion = document.getElementById('question-box').value;
       $('.text-input--long').attr('value', userQuestion);
